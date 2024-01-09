@@ -1,21 +1,65 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Link Analyzer</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 10px;
-      }
-      #results {
-        margin-top: 10px;
-      }
-    </style>
-  </head>
-  <body>
-    <button id="analyzeButton">Analyze Links</button>
-    <div id="results"></div>
-    <script src="popup.js"></script>
-  </body>
+<head>
+  <title>Link Analyzer</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      color: #ffffff;
+      background: #154687;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+
+    button {
+      background: #FAE81D;
+      color: #000;
+      border: none;
+      border-radius: 8px;
+      padding: 16px 48px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      margin-right: 10px;
+      margin-bottom: 20px;
+    }
+
+    #results {
+      margin-top: 20px;
+    }
+
+    .linkTable {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      background: white;
+      color: black;
+    }
+
+    .linkTable, .linkTable th, .linkTable td {
+      border: 1px solid black;
+    }
+
+    .linkTable th, .linkTable td {
+      padding: 10px;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <h1>Link Analyzer</h1>
+  <button id="analyzeButton">Analyze Links</button>
+  <div id="results">
+    <!-- Table will be dynamically inserted here -->
+  </div>
+  <script src="popup.js"></script>
+</body>
 </html>
